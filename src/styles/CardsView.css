@@ -1,16 +1,17 @@
 .cards-view {
-    margin: 20px;
-  }
-  
-  .card-container {
-    display: flex;
-    justify-content: space-around;
-    gap: 20px;
-    flex-wrap: wrap;
-  }
-  
-  h2 {
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
+  margin: 20px;
+  margin-top: 50px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
