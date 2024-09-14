@@ -1,0 +1,24 @@
+/* InputView.css */
+.input-view {
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .input-view h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .input-view input {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+  }
+  
+  .input-view p {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #555;
+  }
+  
