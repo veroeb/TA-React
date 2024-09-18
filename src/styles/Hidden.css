@@ -1,0 +1,31 @@
+.container-hidden {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
+  
+  button.btn-hidden {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 2px solid #007bff;
+    background-color: #fff;
+    color: #007bff;
+    border-radius: 5px;
+  }
+  
+  button.btn-hidden:hover {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  p.visible {
+    display: block;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  
+  p.hidden {
+    display: none;
+  }
+  

@@ -8,13 +8,13 @@ function Counter() {
   const decrease = () => setCount(count - 1);
 
   return (
-    <div class="container">
+    <div className="container">
       <h1>Contador: {count}</h1>
       <div>
-        <button onClick={increase}>
+        <button className="counter" onClick={increase}>
           Incrementar
         </button>
-        <button onClick={decrease}>Decrementar</button>
+        <button className="counter" onClick={decrease}>Decrementar</button>
       </div>
     </div>
   );
