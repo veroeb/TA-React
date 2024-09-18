@@ -4,7 +4,7 @@
     margin-bottom: 50px;
 }
 
-button {
+button.counter {
     margin-right: 10px;
     padding: 10px;
     font-size: 16px;
@@ -13,7 +13,7 @@ button {
     cursor: pointer;
 }
 
-button:active {
+button.counter:active {
     background-color: #007bff;
     color: white;
 }
