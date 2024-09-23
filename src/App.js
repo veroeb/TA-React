@@ -4,6 +4,7 @@ import InputView from "./views/InputView";
 import Counter from "./components/Counter";
 import Hidden from "./components/Hidden";
 import ListaTareas from "./components/ListaTareas";
+import APICall from "./components/APICall";
 import "./App.css";
 
 function App() {
@@ -20,6 +21,8 @@ function App() {
       <Hidden />
 
       <ListaTareas />
+
+      <APICall />
     </div>
   );
 }
