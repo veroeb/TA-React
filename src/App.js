@@ -5,6 +5,7 @@ import Counter from "./components/Counter";
 import Hidden from "./components/Hidden";
 import ListaTareas from "./components/ListaTareas";
 import APICall from "./components/APICall";
+import Timer from "./components/Timer";
 import "./App.css";
 
 function App() {
@@ -23,6 +24,8 @@ function App() {
       <ListaTareas />
 
       <APICall />
+
+      <Timer />
     </div>
   );
 }
