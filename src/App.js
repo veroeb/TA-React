@@ -3,6 +3,7 @@ import CardsView from "./views/CardsView";
 import InputView from "./views/InputView";
 import Counter from "./components/Counter";
 import Hidden from "./components/Hidden";
+import ListaTareas from "./components/ListaTareas";
 import "./App.css";
 
 function App() {
@@ -17,6 +18,8 @@ function App() {
       <Counter />
 
       <Hidden />
+
+      <ListaTareas />
     </div>
   );
 }
