@@ -1,13 +1,41 @@
 button.btn-lista {
-    margin-left: 10px;
-    padding: 10px;
-    font-size: 16px;
-    border: 2px solid #007bff;
-    border-radius: 5px;
-    cursor: pointer;
+  margin-left: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 button.btn-lista:active {
-    background-color: #007bff;
-    color: white;
+  background-color: #007bff;
+  color: white;
+}
+
+ul {
+  padding: 0;
+}
+
+li.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f9fa;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button.btn-eliminar {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button.btn-eliminar:hover {
+  background-color: #c82333;
 }
