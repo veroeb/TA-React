@@ -16,6 +16,13 @@ function ListaTareas() {
     }
   };
 
+  const deleteTask = (indexToDelete) => {
+    const updatedTaskList = taskList.filter(
+      (_, index) => index !== indexToDelete
+    );
+    setTaskList(updatedTaskList);
+  };
+
   return (
     <div style={{ textAlign: "center", marginTop: "50px" }}>
       <h1>Lista de Tareas</h1>
@@ -26,14 +33,19 @@ function ListaTareas() {
         placeholder="Agregar nueva tarea"
         style={{ padding: "10px", fontSize: "16px" }}
       />
-      <button className="btn-lista" onClick={addTask} >
+      <button className="btn-lista" onClick={addTask}>
         Agregar
       </button>
 
-      <ul style={{ marginTop: "20px" }}>
+      <ul
+        style={{ marginTop: "20px", marginLeft: "20px", marginRight: "20px" }}
+      >
         {taskList.map((task, index) => (
-          <li key={index} style={{ listStyleType: "none", marginBottom: "10px" }}>
+          <li key={index} className="task-item">
             {task}
+            <button className="btn-eliminar" onClick={() => deleteTask(index)}>
+              Eliminar
+            </button>
           </li>
         ))}
       </ul>
