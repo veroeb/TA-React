@@ -6,27 +6,33 @@ import Hidden from "./components/Hidden";
 import ListaTareas from "./components/ListaTareas";
 import APICall from "./components/APICall";
 import Timer from "./components/Timer";
+import { UserProvider } from "./context/UserContext";
+import UserView from "./components/UserView";
 import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <h1>React Components Example</h1>
+    <UserProvider>
+      <div className="App">
+        <h1>React Components Example</h1>
 
-      <CardsView />
+        <CardsView />
 
-      <InputView />
+        <InputView />
 
-      <Counter />
+        <Counter />
 
-      <Hidden />
+        <Hidden />
 
-      <ListaTareas />
+        <ListaTareas />
 
-      <APICall />
+        <APICall />
 
-      <Timer />
-    </div>
+        <Timer />
+
+        <UserView />
+      </div>
+    </UserProvider>
   );
 }
 
