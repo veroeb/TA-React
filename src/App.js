@@ -8,6 +8,7 @@ import APICall from "./components/APICall";
 import Timer from "./components/Timer";
 import { UserProvider } from "./context/UserContext";
 import UserView from "./components/UserView";
+import UserInput from "./components/UserInput";
 import "./App.css";
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
 
         <Timer />
 
+        <UserInput />
         <UserView />
       </div>
     </UserProvider>

@@ -9,9 +9,9 @@ const Input = () => {
         type="text" 
         value={inputValue} 
         onChange={(e) => setInputValue(e.target.value)} 
-        placeholder="Type something..." 
+        placeholder="Escribe algo..." 
       />
-      <p>You typed: {inputValue}</p>
+      <p>Escribiste: {inputValue}</p>
     </div>
   );
 };
