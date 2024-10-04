@@ -9,32 +9,40 @@ import Timer from "./components/Timer";
 import { UserProvider } from "./context/UserContext";
 import UserView from "./components/UserView";
 import UserInput from "./components/UserInput";
+import ThemeComponent from "./components/ThemeComponent";
+import ThemeToggle from "./components/ThemeToggle";
+import { ThemeProvider } from "./context/ThemeContext";
 import "./App.css";
 
 function App() {
   return (
-    <UserProvider>
-      <div className="App">
-        <h1>React Components Example</h1>
+    <ThemeProvider>
+      <UserProvider>
+        <div className="App">
+          <h1>React Components Example</h1>
 
-        <CardsView />
+          <CardsView />
 
-        <InputView />
+          <InputView />
 
-        <Counter />
+          <Counter />
 
-        <Hidden />
+          <Hidden />
 
-        <ListaTareas />
+          <ListaTareas />
 
-        <APICall />
+          <APICall />
 
-        <Timer />
+          <Timer />
 
-        <UserInput />
-        <UserView />
-      </div>
-    </UserProvider>
+          <UserInput />
+          <UserView />
+
+          <ThemeToggle />
+          <ThemeComponent />
+        </div>
+      </UserProvider>
+    </ThemeProvider>
   );
 }
 
