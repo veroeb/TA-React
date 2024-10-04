@@ -13,36 +13,42 @@ import ThemeComponent from "./components/ThemeComponent";
 import ThemeToggle from "./components/ThemeToggle";
 import { ThemeProvider } from "./context/ThemeContext";
 import "./App.css";
+import { LanguageProvider } from "./context/LanguageContext";
+import LanguageDisplay from "./components/LanguageDisplay";
 
 function App() {
   return (
-    <ThemeProvider>
-      <UserProvider>
-        <div className="App">
-          <h1>React Components Example</h1>
+    <LanguageProvider>
+      <ThemeProvider>
+        <UserProvider>
+          <div className="App">
+            <h1>React Components Example</h1>
 
-          <CardsView />
+            <CardsView />
 
-          <InputView />
+            <InputView />
 
-          <Counter />
+            <Counter />
 
-          <Hidden />
+            <Hidden />
 
-          <ListaTareas />
+            <ListaTareas />
 
-          <APICall />
+            <APICall />
 
-          <Timer />
+            <Timer />
 
-          <UserInput />
-          <UserView />
+            <UserInput />
+            <UserView />
 
-          <ThemeToggle />
-          <ThemeComponent />
-        </div>
-      </UserProvider>
-    </ThemeProvider>
+            <ThemeToggle />
+            <ThemeComponent />
+
+            <LanguageDisplay />
+          </div>
+        </UserProvider>
+      </ThemeProvider>
+    </LanguageProvider>
   );
 }
 
