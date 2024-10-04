@@ -19,39 +19,17 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "./screens/Home";
 import About from "./screens/About";
 import Contact from "./screens/Contact";
+import Product from "./components/Product";
 
 function App() {
   return (
     <LanguageProvider>
       <ThemeProvider>
         <UserProvider>
-          <div className="App">
-            <h1>React Components Example</h1>
-
-            <CardsView />
-
-            <InputView />
-
-            <Counter />
-
-            <Hidden />
-
-            <ListaTareas />
-
-            <APICall />
-
-            <Timer />
-
-            <UserInput />
-            <UserView />
-
-            <ThemeToggle />
-            <ThemeComponent />
-
-            <LanguageDisplay />
-          </div>
           <Router>
-            <div>
+            <div className="App">
+              <h1>React Components Example</h1>
+
               <nav>
                 <ul>
                   <li>
@@ -63,6 +41,12 @@ function App() {
                   <li>
                     <Link to="/contact">Contact</Link>
                   </li>
+                  <li>
+                    <Link to="/product/1">Producto 1</Link>
+                  </li>
+                  <li>
+                    <Link to="/product/2">Producto 2</Link>
+                  </li>
                 </ul>
               </nav>
 
@@ -70,7 +54,21 @@ function App() {
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/contact" element={<Contact />} />
+                <Route path="/product/:id" element={<Product />} />
               </Routes>
+
+              <CardsView />
+              <InputView />
+              <Counter />
+              <Hidden />
+              <ListaTareas />
+              <APICall />
+              <Timer />
+              <UserInput />
+              <UserView />
+              <ThemeToggle />
+              <ThemeComponent />
+              <LanguageDisplay />
             </div>
           </Router>
         </UserProvider>
