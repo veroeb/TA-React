@@ -7,6 +7,9 @@ function LanguageDisplay() {
 
   return (
     <div>
+      <div className="div-ta">
+        <h2 className="titulo-ta">TA 15: Language Toggle</h2>
+      </div>
       <h2>Idioma Actual: {language === "es" ? "Español" : "Inglés"}</h2>
       <button className="language" onClick={() => setLanguage("es")}>
         Español

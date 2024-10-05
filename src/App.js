@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
-import CardsView from "./views/CardsView";
-import InputView from "./views/InputView";
+import CardsView from "./screens/CardsView";
+import InputView from "./screens/InputView";
 import Counter from "./components/Counter";
 import Hidden from "./components/Hidden";
 import ListaTareas from "./components/ListaTareas";

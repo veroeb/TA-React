@@ -6,7 +6,7 @@ const Home = () => {
   const { login, isAuthenticated } = useContext(AuthContext);
 
   return (
-    <div>
+    <div style={{ marginBottom: "20px" }}>
       <h1>Página de Inicio</h1>
       <p>Bienvenido a la página de inicio de nuestra aplicación</p>
       {!isAuthenticated ? (

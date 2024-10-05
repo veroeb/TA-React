@@ -6,9 +6,14 @@ const ThemeToggle = () => {
   const { temaOscuro, toggleTema } = useContext(ThemeContext);
 
   return (
-    <button onClick={toggleTema}>
-      Cambiar a tema {temaOscuro ? "claro" : "oscuro"}
-    </button>
+    <div>
+      <div className="div-ta">
+        <h2 className="titulo-ta">TA 14: Theme Toggle</h2>
+      </div>
+      <button onClick={toggleTema} style={{ marginTop: "20px" }}>
+        Cambiar a tema {temaOscuro ? "claro" : "oscuro"}
+      </button>
+    </div>
   );
 };
 
