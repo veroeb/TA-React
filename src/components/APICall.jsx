@@ -33,16 +33,21 @@ function APICall() {
   }
 
   return (
-    <div className="container">
-      <h1>Lista de Usuarios</h1>
-      <ul>
-        {users.map((user) => (
-          <li key={user.id} className="user-item">
-            <strong>Nombre:</strong> {user.name} <br />
-            <strong>Email:</strong> {user.email}
-          </li>
-        ))}
-      </ul>
+    <div>
+      <div className="div-ta">
+        <h2 className="titulo-ta">TA 10: API Call</h2>
+      </div>
+      <div className="users-container">
+        <h1>Lista de Usuarios</h1>
+        <ul>
+          {users.map((user) => (
+            <li key={user.id} className="user-item">
+              <strong>Nombre:</strong> {user.name} <br />
+              <strong>Email:</strong> {user.email}
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 }

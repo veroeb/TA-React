@@ -13,11 +13,16 @@ const Timer = () => {
   }, []);
 
   return (
-    <div className="timer-container">
-      <h1>Temporizador</h1>
-      <p>Segundos: {seconds}</p>
+    <div>
+      <div className="div-ta">
+        <h2 className="titulo-ta">TA 11: Timer</h2>
+      </div>
+      <div className="timer-container">
+        <h1>Temporizador</h1>
+        <p>Segundos: {seconds}</p>
+      </div>
     </div>
   );
-}
+};
 
 export default Timer;

@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
-import CardsView from "./views/CardsView";
-import InputView from "./views/InputView";
+import CardsView from "./screens/CardsView";
+import InputView from "./screens/InputView";
 import Counter from "./components/Counter";
 import Hidden from "./components/Hidden";
 import ListaTareas from "./components/ListaTareas";
@@ -34,6 +34,22 @@ function App() {
               <div className="App">
                 <h1>React Components Example</h1>
 
+                <CardsView />
+                <InputView />
+                <Counter />
+                <Hidden />
+                <ListaTareas />
+                <APICall />
+                <Timer />
+                <UserInput />
+                <UserView />
+                <ThemeToggle />
+                <ThemeComponent />
+                <LanguageDisplay />
+
+                <div className="div-ta">
+                  <h2 className="titulo-ta">TA 16: React Router</h2>
+                </div>
                 <nav>
                   <ul>
                     <li>
@@ -71,19 +87,6 @@ function App() {
                   />
                   <Route path="/product/:id" element={<Product />} />
                 </Routes>
-
-                <CardsView />
-                <InputView />
-                <Counter />
-                <Hidden />
-                <ListaTareas />
-                <APICall />
-                <Timer />
-                <UserInput />
-                <UserView />
-                <ThemeToggle />
-                <ThemeComponent />
-                <LanguageDisplay />
               </div>
             </Router>
           </UserProvider>

@@ -4,9 +4,14 @@ import "../styles/InputView.css";
 
 const InputView = () => {
   return (
-    <div className="input-view">
-      <h2>TA 3: Input Component</h2>
-      <Input />
+    <div>
+      <div className="div-ta">
+        <h2 className="titulo-ta">TA 3: Input Component</h2>
+      </div>
+
+      <div className="input-view">
+        <Input />
+      </div>
     </div>
   );
 };
